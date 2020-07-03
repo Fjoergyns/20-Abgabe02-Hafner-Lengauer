@@ -4,20 +4,28 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-// there's some Bugs included, try to debug the code and fix the Bugs
-// there are different Bugs, wrong implementation, typos, ...
-// write Test-Cases (read Queue Interface for understanding methods) and use Debugging possibilies of your IDE
-
 public class StringQueue implements IQueue<String> {
 
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
+  /**
+   * Constructor of the StringQueue.
+   *
+   * @param maxSize the maximal amount of elements the queue can hold
+   */
   public StringQueue(int maxSize)
   {
     this.maxSize = maxSize;
   }
 
+  /**
+   * Offer adds an element to the queue
+   *
+   * @param obj the element which gets add to the queue
+   *
+   * @return true if it is possible; false if there are to many elements
+   */
   @Override
   public boolean offer(String obj)
   {
@@ -29,6 +37,11 @@ public class StringQueue implements IQueue<String> {
     return true;
   }
 
+  /**
+   * Poll returns the next element in the queue and removes it from the queue
+   *
+   * @return next element of the queue
+   */
   @Override
   public String poll()
   {
@@ -42,6 +55,13 @@ public class StringQueue implements IQueue<String> {
     return element;
   }
 
+  /**
+   * Remove removes the next element from the queue
+   *
+   * @return next removed element
+   *
+   * @throws NoSuchElementException if there are no elements left in the queue
+   */
   @Override
   public String remove()
   {
@@ -52,6 +72,11 @@ public class StringQueue implements IQueue<String> {
     return element;
   }
 
+  /**
+   * Peek returns the next element
+   *
+   * @return the next element of the queue; null if there are no elements left
+   */
   @Override
   public String peek()
   {
@@ -64,6 +89,13 @@ public class StringQueue implements IQueue<String> {
     return element;
   }
 
+  /**
+   * Element returns the next element in the queue
+   *
+   * @return next element
+   *
+   * @throws NoSuchElementException if there are no elements left in the queue
+   */
   @Override
   public String element()
   {

@@ -58,7 +58,7 @@ public class GenericGenericStringQueueQueueTest
     @DisplayName("Testing: poll")
     public void testPoll()
     {
-        GenericQueue<String>expectedGenericQueue=new GenericQueue<String>(2);
+        GenericQueue<String> expectedGenericQueue = new GenericQueue<String>(2);
         genericQueue.offer(expectedGenericQueue);
         genericQueue.offer(new GenericQueue<String>(2));
         assertEquals(expectedGenericQueue, genericQueue.poll());
@@ -73,7 +73,7 @@ public class GenericGenericStringQueueQueueTest
     @DisplayName("Testing: remove")
     public void testRemove()
     {
-        GenericQueue<String>expectedGenericQueue=new GenericQueue<String>(2);
+        GenericQueue<String> expectedGenericQueue = new GenericQueue<String>(2);
         genericQueue.offer(expectedGenericQueue);
         genericQueue.offer(new GenericQueue<String>(2));
         assertEquals(expectedGenericQueue, genericQueue.remove());
@@ -100,7 +100,7 @@ public class GenericGenericStringQueueQueueTest
     @DisplayName("Testing: peek")
     public void testPeek()
     {
-        GenericQueue<String>expectedGenericQueue=new GenericQueue<String>(2);
+        GenericQueue<String> expectedGenericQueue = new GenericQueue<String>(2);
         genericQueue.offer(expectedGenericQueue);
         genericQueue.offer(new GenericQueue<String>(2));
         assertEquals(expectedGenericQueue, genericQueue.peek());
@@ -127,7 +127,7 @@ public class GenericGenericStringQueueQueueTest
     @DisplayName("Testing: element")
     public void testElement()
     {
-        GenericQueue<String>expectedGenericQueue=new GenericQueue<String>(2);
+        GenericQueue<String> expectedGenericQueue = new GenericQueue<String>(2);
         genericQueue.offer(expectedGenericQueue);
         genericQueue.offer(new GenericQueue<String>(2));
         assertEquals(expectedGenericQueue, genericQueue.element());
