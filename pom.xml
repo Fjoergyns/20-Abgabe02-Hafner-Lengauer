@@ -18,7 +18,7 @@
       <email>nadine.hafner@edu.campus02.at</email>
       <url>https://github.com/NadineHafner</url>
       <organization>FH Campus02</organization>
-      <organizationUrl>https://www.campus02.at/iit</organizationUrl>
+      <organizationUrl>https://www.campus02.at</organizationUrl>
       <roles>
         <role>Student</role>
       </roles>
@@ -28,18 +28,18 @@
       </properties>
     </developer>
     <developer>
-      <id>Fjoergyns</id>
+      <id>JohannesLengauer</id>
       <name>Johannes Lengauer</name>
       <email>johannes.lengauer@edu.campus02.at</email>
-      <url>https://github.com/Fjoergyns</url>
+      <url>https://github.com/JohannesLengauer</url>
       <organization>FH Campus02</organization>
-      <organizationUrl>https://www.campus02.at/iit</organizationUrl>
+      <organizationUrl>https://www.campus02.at</organizationUrl>
       <roles>
         <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
-        <picUrl>https://avatars.githubusercontent.com/Fjoergyns</picUrl>
+        <picUrl>https://avatars.githubusercontent.com/JohannesLengauer</picUrl>
       </properties>
     </developer>
   </developers>
