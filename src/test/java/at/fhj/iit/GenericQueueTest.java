@@ -1,4 +1,77 @@
 package at.fhj.iit;
 
-public class GenericQueueTest {
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
+
+
+@DisplayName("Testing GenericQueue")
+class GenericQueueTest {
+
+
+    /**
+     *
+     */
+    @BeforeEach
+    void setup()
+    {
+
+    }
+
+    /**
+     *
+     *
+     */
+    @Test
+    @DisplayName("Testing: offer")
+    public void testOffer()
+    {
+
+    }
+
+    /**
+     *
+     *
+     */
+    @Test
+    @DisplayName("Testing: poll")
+    public void testPoll()
+    {
+
+    }
+
+    /**
+     *
+     *
+     */
+    @Test
+    @DisplayName("Testing: remove")
+    public void testRemove()
+    {
+
+    }
+
+    /**
+     *
+     *
+     */
+    @Test
+    @DisplayName("Testing: peek")
+    public void testPeek()
+    {
+
+    }
+
+    /**
+     *
+     *
+     */
+    @Test
+    @DisplayName("Testing: element")
+    public void testElement()
+    {
+
+    }
 }
