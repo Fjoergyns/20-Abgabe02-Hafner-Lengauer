@@ -13,12 +13,14 @@ public class StringQueue implements IQueue<String> {
   private List<String> elements = new ArrayList<String>();
   private int maxSize = 5;
 
-  public StringQueue(int maxsize) {
+  public StringQueue(int maxSize)
+  {
     this.maxSize = maxSize;
   }
 
   @Override
-  public boolean offer(String obj) {
+  public boolean offer(String obj)
+  {
     if (elements.size() != maxSize)
       elements.add(obj);
     else
@@ -28,10 +30,12 @@ public class StringQueue implements IQueue<String> {
   }
 
   @Override
-  public String poll() {
+  public String poll()
+  {
     String element = peek();
 
-    if (elements.size() != 0) {
+    if (elements.size() != 0)
+    {
       elements.remove(0);
     }
 
@@ -39,7 +43,8 @@ public class StringQueue implements IQueue<String> {
   }
 
   @Override
-  public String remove() {
+  public String remove()
+  {
     String element = poll();
     if (element == null)
       throw new NoSuchElementException("there's no element any more");
@@ -48,7 +53,8 @@ public class StringQueue implements IQueue<String> {
   }
 
   @Override
-  public String peek() {
+  public String peek()
+  {
     String element;
     if (elements.size() > 0)
       element = elements.get(0);
@@ -59,7 +65,8 @@ public class StringQueue implements IQueue<String> {
   }
 
   @Override
-  public String element() {
+  public String element()
+  {
     String element = peek();
     if (element == null)
       throw new NoSuchElementException("there's no element any more");

@@ -2,13 +2,19 @@ package at.fhj.iit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
-public class GenericQueue <T> implements IQueue <T>  {
+public class GenericQueue <T> implements IQueue <T>
+{
     private List <T> elements = new ArrayList <T>();
     private int maxSize = 5;
 
+    public GenericQueue(int maxSize)
+    {
+        this.maxSize = maxSize;
+    }
 
     @Override
-    public boolean offer(T obj) {
+    public boolean offer(T obj)
+    {
         if (elements.size() != maxSize)
             elements.add(obj);
         else
@@ -18,10 +24,12 @@ public class GenericQueue <T> implements IQueue <T>  {
     }
 
     @Override
-    public T poll() {
+    public T poll()
+    {
         T element = peek();
 
-        if (elements.size() != 0) {
+        if (elements.size() != 0)
+        {
             elements.remove(0);
         }
 
@@ -29,7 +37,8 @@ public class GenericQueue <T> implements IQueue <T>  {
     }
 
     @Override
-    public T remove() {
+    public T remove()
+    {
         T element = poll();
         if (element == null)
             throw new NoSuchElementException("there's no element any more");
@@ -38,7 +47,8 @@ public class GenericQueue <T> implements IQueue <T>  {
     }
 
     @Override
-    public T peek() {
+    public T peek()
+    {
         T element;
         if (elements.size() > 0)
             element = elements.get(0);
@@ -49,7 +59,8 @@ public class GenericQueue <T> implements IQueue <T>  {
     }
 
     @Override
-    public T element() {
+    public T element()
+    {
         T element = peek();
         if (element == null)
             throw new NoSuchElementException("there's no element any more");
