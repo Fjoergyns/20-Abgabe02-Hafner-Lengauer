@@ -1,4 +1,4 @@
-# 20-Abgabe01-Hafner-Lengauer
+# 20-Abgabe02-Hafner-Lengauer
 This is a project by Nadine Hafner and Johannes Lengauer
 
 The purpose of this project is practicing with Maven.
@@ -18,11 +18,11 @@ Tasklist:
 - [x] finding the three errors in the code
 - [x] implementing generic Queue implementation
 - [x] implement the five maven tasks clean, validate, compile, test and site
-- [ ] implement maven site documentation
+- [x] implement maven site documentation
 > - [x] javaDoc as maven site export
-> - [ ] manually created content
-> - [ ] use code-snippets and graphics
-> - [ ] uses optional content
+> - [x] manually created content
+> - [x] use code-snippets
+> - [x] uses optional content
 - [x] filling pom.xml with meta-data
 > - [x] link to git repository
 > - [x] metadata about developers
