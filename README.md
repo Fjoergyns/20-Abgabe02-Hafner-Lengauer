@@ -17,7 +17,12 @@ Tasklist:
 - [x] linking the Repository in the lab-report
 - [x] finding the three errors in the code
 - [x] implementing generic Queue implementation
-- [ ] implement the five maven tasks clean, validate, compile, test and site
+- [x] implement the five maven tasks clean, validate, compile, test and site
+- [ ] implement maven site documentation
+> - [x] javaDoc as maven site export
+> - [ ] manually created content
+> - [ ] use code-snippets and graphics
+> - [ ] uses optional content
 - [x] filling pom.xml with meta-data
 > - [x] link to git repository
 > - [x] metadata about developers
